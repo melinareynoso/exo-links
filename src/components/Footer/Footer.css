@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  color: #000000;
+}
+
+footer p {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2rem;
+  color: #000000;
+
+}
