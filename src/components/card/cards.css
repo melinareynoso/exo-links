@@ -165,6 +165,9 @@
 }
 
 #consultas{
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: rgb(180, 180, 180);
 }

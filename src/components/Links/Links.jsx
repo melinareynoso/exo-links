@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import './Links.css';
 
 const Links = () => {
@@ -43,11 +43,13 @@ const Links = () => {
          <li>
             <a className='link'>
               WhatsApp
+              <i className="fa-plus"   class="fa fa-whatsapp "></i> 
             </a>
          </li>
          <li>
             <a className='link'>
               Instagram
+              <i className="fa-plus"   class="fa fa-instagram "></i> 
             </a>
          </li>
       </ul>
