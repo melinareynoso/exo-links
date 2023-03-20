@@ -22,7 +22,7 @@ import "./popup.css";
 
 import { useState, useEffect } from "react";
 
-import { getFirestore, doc, updateDoc, getDoc } from "firebase/firestore";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 
 export default function Cardlist() {
   const [producto, setProducto] = useState(null); // declarar estado con valor inicial null

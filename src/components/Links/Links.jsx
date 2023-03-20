@@ -31,23 +31,23 @@ const Links = () => {
           </Link>
          </li>
          <li>
-            <a onClick={handleOpenAbout} className='link'>
+            <a href="/#" onClick={handleOpenAbout} className='link'>
               Quienes somos
             </a>
          </li>
          <li>
-            <a onClick={handleOpenShipping} className='link'>
+            <a href="/#" onClick={handleOpenShipping} className='link'>
               Envios
             </a>
          </li>
          <li>
-            <a className='link'>
+         <a rel="noopener noreferrer" href="https://www.instagram.com/estereocolorvidal/" class="link" target="_blank"> 
               WhatsApp
               <i className="fa-plus"   class="fa fa-whatsapp "></i> 
             </a>
          </li>
          <li>
-            <a className='link'>
+         <a rel="noopener noreferrer" href="https://www.instagram.com/estereocolorvidal/" class="link" target="_blank"> 
               Instagram
               <i className="fa-plus"   class="fa fa-instagram "></i> 
             </a>
