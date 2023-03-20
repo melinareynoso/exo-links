@@ -41,7 +41,7 @@ const Links = () => {
             </a>
          </li>
          <li>
-         <a rel="noopener noreferrer" href="https://www.instagram.com/estereocolorvidal/" class="link" target="_blank"> 
+         <a rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5493513289063" class="link" target="_blank"> 
               WhatsApp
               <i className="fa-plus"   class="fa fa-whatsapp "></i> 
             </a>
