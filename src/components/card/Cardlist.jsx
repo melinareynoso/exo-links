@@ -24,7 +24,8 @@ import { useState, useEffect } from "react";
 
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 
-export default function Cardlist() {
+export default function Cardlist({handleOpenCatalog}) {
+  console.log(handleOpenCatalog)
   const [producto, setProducto] = useState(null); // declarar estado con valor inicial null
 
   useEffect(() => {
@@ -355,6 +356,7 @@ export default function Cardlist() {
                     )}
                   </div>
                 )}
+                
               </div>
               <span
                 className="responsive-button"
@@ -366,6 +368,7 @@ export default function Cardlist() {
             </div>
           </div>
         </div>
+        <button className="popup-link-close-btn" onClick={handleOpenCatalog}>Cerrar</button>
       </div>
     </section>
   );

@@ -1,42 +1,41 @@
 import React, { useState } from 'react';
-import {Link } from 'react-router-dom';
 import './Links.css';
+import Cardlist from "../card/Cardlist";
 
 const Links = () => {
   const [showAbout, setShowAbout] = useState(false);
   const [showShipping, setShipping] = useState(false);
+  const [showCatalog ,  setShowCatalog] =  useState(false)
 
-  const handleOpenAbout = () => {
-    setShowAbout(true);
+  const handleOpenCatalog = () => {
+    setShowCatalog(!showCatalog);
   }
 
-  const handleCloseAbout = () => {
-    setShowAbout(false);
+
+  const handleAbout = () => {
+    setShowAbout(!showAbout);
   }
 
-  const handleOpenShipping = () => {
-    setShipping(true);
+  const handleShipping = () => {
+    setShipping(!showShipping);
   }
 
-  const handleCloseShipping = () => {
-    setShipping(false);
-  }
 
   return (
     <section className='content'>
       <ul>
          <li>
-         <Link to='/catalogo' className='link'>
-            Catalogo
-          </Link>
+            <a href="/#" onClick={handleOpenCatalog} className='link'>
+              Catalogo
+            </a>
          </li>
          <li>
-            <a href="/#" onClick={handleOpenAbout} className='link'>
+            <a href="/#" onClick={handleAbout} className='link'>
               Quienes somos
             </a>
          </li>
          <li>
-            <a href="/#" onClick={handleOpenShipping} className='link'>
+            <a href="/#" onClick={handleShipping} className='link'>
               Envios
             </a>
          </li>
@@ -64,7 +63,7 @@ const Links = () => {
               los productos de la marca Estereo-Color y Bonmetique, 
               que gracias a su precio/calidad van tomando mas relevancia en el mundo del cuidado capilar
             </p>
-            <button className="popup-link-close-btn" onClick={handleCloseAbout}>Cerrar</button>
+            <button className="popup-link-close-btn" onClick={handleAbout}>Cerrar</button>
           </div>
         </div>
       )}
@@ -78,8 +77,16 @@ const Links = () => {
            La demora de entrega es de <strong> 3 a 6 días hábiles</strong> aproximadamente, como asi el costo de envio,
            depende siempre de la localidad de destino.
             </p>
-            <button className="popup-link-close-btn" onClick={handleCloseShipping}>Cerrar</button>
+            <button className="popup-link-close-btn" onClick={handleShipping}>Cerrar</button>
           </div>
+        </div>
+      )}
+      {showCatalog && (
+        <div className="popup-link-cards">
+          <div className="popup-link-content-cards">
+            <Cardlist handleOpenCatalog={handleOpenCatalog} />
+          </div>
+          
         </div>
       )}
     </section>

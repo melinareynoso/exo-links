@@ -168,6 +168,15 @@
     text-align: left;
   }
 
+  .popup .btn-cerrar-popup {
+    display: none;
+}
+
+    .responsive-button {
+    
+    opacity: 1;
+  }
+
  
   }
 
