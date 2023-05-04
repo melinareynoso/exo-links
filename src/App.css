@@ -1,11 +1,18 @@
+@font-face {
+  font-family: Gotham;
+  src: url("../public/Gotham\ Book\ Font.otf");
+}
+
+
 .App {
-  height: 100vh;
+  font-family: Gotham;
+  height: 80vh;
   width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 a {

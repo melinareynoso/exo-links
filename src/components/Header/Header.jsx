@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-import logo from './logo5.png'
+import logo from './exo-white.png'
 
 const Header = () => {
   
@@ -10,7 +10,7 @@ const Header = () => {
     <header>
       <nav className='logo'>
         <img src={logo} alt={''} />
-        <h1>Distribuidora El Camino</h1>
+        {/* <h1>EXO DIGITAL</h1> */}
       </nav>
     </header>
   );
